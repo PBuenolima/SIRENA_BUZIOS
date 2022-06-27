@@ -1,12 +1,39 @@
-.navbar-lewagon {
+.navbar-sirena {
   justify-content: space-between;
-  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  height: 10vh;
+  font-weight: 500;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(233, 233, 233);
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
