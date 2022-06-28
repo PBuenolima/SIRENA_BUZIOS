@@ -1,9 +1,7 @@
 class ClientsController < ApplicationController
   def create
     @client = Client.new(client_params)
-    @client.save
-
-    redirect_to root_path
+    redirect_to root_path if @client.save
   end
 
   private
