@@ -1,7 +1,13 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "bannerdia.jpg" %>');">
     <%= render 'shared/navbar' %>
     <div class="container banner-logo">
-      <%= image_path "sirenalogobranco.png"%>
+    <div class="row" style="width:100vw;">
+      <div class="col-5"></div>
+      <div class="col-2">
+        <%= image_tag "sirenalogobranco.png", style:"height: auto; width:100%;"%>
+      </div>
+      <div class="col-5"></div>
+    </div>
     </div>
 </div>
 
@@ -18,5 +24,21 @@
   </div>
   <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/eiYlhE-CQxg" title="Sirena Buzios Sunset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4 form-style">
+      <!-- Insert form here -->
+      <%= simple_form_for @client  do |f| %>
+        <%= f.input :name %>
+        <%= f.input :email %>
+        <%= f.input :phone_number %>
+        <%= f.submit "Enviar contato", class: "btn btn-primary" %>
+      <% end %>
+      <hr>
+      <h2>PARA RESERVAS</h2>
+    </div>
   </div>
 </div>
