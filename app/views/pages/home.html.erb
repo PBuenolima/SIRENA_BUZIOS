@@ -1,14 +1,15 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "bannerdia.jpg" %>');">
-    <%= render 'shared/navbar' %>
-    <div class="container banner-logo">
+  <%= render 'shared/navbar' %>
+  <div class="container banner-logo">
+    <div class="row my-5"></div>
     <div class="row" style="width:100vw;">
-      <div class="col-5"></div>
-      <div class="col-2">
+      <div class="col-1 col-lg"></div>
+      <div class="col-10 col-lg-3">
         <%= image_tag "sirenalogobranco.png", style:"height: auto; width:100%;"%>
       </div>
-      <div class="col-5"></div>
+      <div class="col-1 col-lg"></div>
     </div>
-    </div>
+  </div>
 </div>
 
 <div class="container">
@@ -19,13 +20,62 @@
 </div>
 
 <div class="container">
+  <div class="row">
+   <div class="col-12 col-lg-3">
+    <div class="card-category" style="background-image: url('<%= image_path "drink3.jpg" %>');">
+    </div>
+   </div>
+   <div class="col-12 col-lg-3">
+    <div class="card-category" style="background-image: url('<%= image_path "prato1.jpg" %>');">
+    </div>
+   </div>
+   <div class="col-12 col-lg-3">
+    <div class="card-category" style="background-image: url('<%= image_path "vista1.jpg" %>');">
+    </div>
+   </div>
+   <div class="col-12 col-lg-3">
+    <div class="card-category" style="background-image: url('<%= image_path "drink2.jpg" %>');">
+    </div>
+   </div>
+</div>
+
+
+
+<div class="container">
   <div class="d-flex align-itens-center justify-content-center my-3" id="sunset">
-    <h1> Sunset</h1>
+    <h1>Sunset</h1>
   </div>
-  <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/eiYlhE-CQxg" title="Sirena Buzios Sunset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Todos os dias a partir das 16h nossos Djs agitam o pôr-do-sol mais lindo de Búzios na areia do Sirena, deixando nossa atmosfera ainda mais agradável e especial.</p>
+</div>
+
+<div class="banner-dj" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= image_path "palmeirasbanner.jpg" %>');">
+  <div class="row" style="width:107vw;">
+    <div class="col-0 col-lg-3">
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="dj-title">
+        <h1 style="font-size: 40px; text-align:end; margin-right:10px;"><strong>Line Up</strong></h1>
+        <h1 style="font-size: 20px; text-align:end; margin-right:10px;">Djs residentes Robert Pantoja e Warley Santos</h1>
+      </div>
+    </div>
+    <div class="dj-image col-12 col-lg-3">
+      <%= image_tag "djsirena.jpg", style:"height: 50vh; width:350px; position:absolute; top:0px"%>
+    </div>
   </div>
 </div>
+
+<div class="container mt-5">
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/eiYlhE-CQxg" title="Sirena Buzios Sunset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 <div class="container">
   <div class="row justify-content-center">
@@ -35,7 +85,7 @@
         <%= f.input :name %>
         <%= f.input :email %>
         <%= f.input :phone_number %>
-        <%= f.submit "Enviar contato", class: "btn btn-primary" %>
+        <%= f.submit "ENVIAR", class: "btn btn-primary" %>
       <% end %>
       <hr>
       <h2>PARA RESERVAS</h2>
