@@ -70,7 +70,13 @@
 
 
 
-
+<div class="row">
+  <div class="col-0 col-lg-4"></div>
+  <div class="col-12 col-lg-4">
+    <div id='map' style='width: 100%; height: 400px;' class= "mt-3"></div>
+  </div>
+  <div class="col-0 col-lg-4"></div>
+</div>
 
 
 
@@ -90,3 +96,46 @@
     </div>
   </div>
 </div>
+
+
+
+<style>
+#marker {
+background-image: url('<%= image_path 'marker.png' %>');
+background-size: cover;
+width: 40px;
+height: 55px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+}
+</style>
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoibmlja3NmYXJpYXMiLCJhIjoiY2wzNHN3NWdqMDAxNTNjcWI4cjVmOXNlbSJ9.-kHJJZfflrU2tAKpm7L75w';
+const monument = [-41.91201198021214, -22.769525662110265];
+const map = new mapboxgl.Map({
+container: 'map',
+style:'mapbox://styles/mapbox/streets-v11',
+center: monument,
+zoom: 15
+});
+
+// create the popup
+const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+'Associação dos Pescadores - Av. José Bento Ribeiro Dantas, 85 - box 7, Búzios - RJ, 28950-000'
+);
+
+// create DOM element for the marker
+const el = document.createElement('div');
+el.id = 'marker';
+
+// create the marker
+new mapboxgl.Marker(el)
+.setLngLat(monument)
+.setPopup(popup) // sets a popup on this marker
+.addTo(map);
+</script>
