@@ -1,13 +1,13 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "bannerdia.jpg" %>');">
   <%= render 'shared/navbar' %>
-  <div class="container banner-logo">
+  <div class="container banner-logo mt-5 pt-5">
     <div class="row my-5"></div>
     <div class="row" style="width:100vw;">
-      <div class="col-1 col-lg"></div>
-      <div class="col-10 col-lg-3">
-        <%= image_tag "sirenalogobranco.png", style:"height: auto; width:100%;"%>
+      <div class="col-1 col-sm-3 col-lg"></div>
+      <div class="col-10 col-sm-6 col-lg-3">
+        <%= image_tag "sirenalogobranco.png", style:"height: auto; width:100%;", id:"logobranca"%>
       </div>
-      <div class="col-1 col-lg"></div>
+      <div class="col-1 col-sm-3 col-lg"></div>
     </div>
   </div>
 </div>
@@ -39,7 +39,7 @@
 
 <div class="container">
   <div class="d-flex align-itens-center justify-content-center my-3" id="sunset">
-    <h1>Sunset</h1>
+    <h1 style="text-align:center">Sunset</h1>
   </div>
 </div>
 
@@ -51,9 +51,9 @@
     </div>
     <div class="col-12 col-lg-6">
       <div class="dj-title">
-        <h1 style="font-size: 40px; text-align:center; margin-right:10px;"><strong>Line Up</strong></h1>
-        <h1 style="font-size: 20px; text-align:start; margin-right:10px;">Djs residentes Robert Pantoja e Warley Santos</h1>
-        <p>Todos os dias a partir das 16h nossos Djs agitam o pôr-do-sol mais lindo de Búzios na areia do Sirena, deixando nossa atmosfera ainda mais agradável e especial.</p>
+        <p style="font-size: 20px; text-align:start">Todos os dias a partir das 16h nossos Djs agitam o pôr-do-sol mais lindo de Búzios na areia do Sirena, deixando nossa atmosfera ainda mais agradável e especial.</p>
+        <h1 style="font-size: 30px; text-align:center; margin-right:10px;"><strong>Line Up</strong></h1>
+        <h1 style="font-size: 20px; text-align:center; margin-right:10px;">Djs residentes Robert Pantoja e Warley Santos</h1>
       </div>
     </div>
     <div class="dj-image col-12 col-lg-3">
@@ -82,7 +82,7 @@
 
   <div class="banner-eventos" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "estruturasirena.jpg" %>');">
     <div class="container banner-logo">
-      <div class="row my-5"></div>
+      <div class="row mt-2"></div>
       <div class="row" style="height: auto; width:100%;">
         <div class="col-2 col-sm col-lg"></div>
         <div class="col-9 col-sm-5 col-lg-3" style="z-index:2;">
@@ -115,7 +115,7 @@
   </div>
   <div class="row">
     <div class="col-12 mt-3 col-lg-4">
-      <div class="card-category" style="background-image: url('<%= image_path "evento1.jpg" %>');">
+      <div class="card-category" style="background-image: url('<%= image_path "evento4.png" %>');">
       </div>
     </div>
     <div class="col-12 mt-3 col-lg-4">
@@ -123,7 +123,7 @@
       </div>
     </div>
     <div class="col-12 mt-3 col-lg-4">
-      <div class="card-category" style="background-image: url('<%= image_path "evento4.png" %>');">
+      <div class="card-category" style="background-image: url('<%= image_path "evento1.jpg" %>');">
       </div>
    </div>
   </div>

@@ -23,8 +23,8 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 /* Change the color of links on hover */
@@ -36,4 +36,10 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a{
+    font-size: 17px;
+  }
 }
