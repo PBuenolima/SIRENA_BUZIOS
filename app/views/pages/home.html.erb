@@ -126,16 +126,22 @@ zoom: 15
 
 // create the popup
 const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-'Associação dos Pescadores - Av. José Bento Ribeiro Dantas, 85 - box 7, Búzios - RJ, 28950-000'
+'Sirena Buzios - Associação dos Pescadores - Av. José Bento Ribeiro Dantas, 85'
 );
 
 // create DOM element for the marker
 const el = document.createElement('div');
 el.id = 'marker';
 
+
+
 // create the marker
-new mapboxgl.Marker(el)
+const marker = new mapboxgl.Marker(el)
 .setLngLat(monument)
 .setPopup(popup) // sets a popup on this marker
 .addTo(map);
+
+const markerDiv = marker.getElement();
+markerDiv.addEventListener('mouseenter', () => marker.togglePopup());
+markerDiv.addEventListener('mouseleave', () => marker.togglePopup());
 </script>
