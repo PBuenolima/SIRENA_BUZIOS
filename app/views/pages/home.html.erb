@@ -13,10 +13,16 @@
 </div>
 
 <div class="container">
-  <div class="d-flex align-itens-center justify-content-center my-5" id="quemsomos">
-    <h1>Quem somos</h1>
+  <div class="row">
+    <div class="banner-dj my-5" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= image_path "palmeirasbanner.jpg" %>');">
+      <div class="col-0 col-lg-0"></div>
+      <div class="col-12 col-lg-12 my-4">
+        <h1 class="cardapio"><strong>QUEM SOMOS</strong></h1>
+        <p style="font-size: 18px; text-align:center">O Sirena Búzios é um Gastrobar na beira da praia de Manguinhos, em frente ao pôr do sol mais lindo da cidade! Totalmente inspirados na natureza que nos cerca, nossa proposta é oferecer excelente música e gastronomia em um ambiente informal, onde amigos e famílias podem desfrutar de uma experiência incrível e com o pé na areia.</p>
+      </div>
+      <div class="col-0 col-lg-0"></div>
+    </div>
   </div>
-    <p>O Sirena Búzios é um Gastrobar na beira da praia de Manguinhos, em frente ao pôr do sol mais lindo da cidade! Totalmente inspirados na natureza que nos cerca, nossa proposta é oferecer excelente música e gastronomia em um ambiente informal, onde amigos e famílias podem desfrutar de uma experiência incrível e com o pé na areia.</p>
 </div>
 
 <div class="container">
@@ -36,29 +42,33 @@
   </div>
 </div>
 
-
 <div class="container">
-  <div class="d-flex align-itens-center justify-content-center my-3" id="sunset">
-    <h1 style="text-align:center">Sunset</h1>
-  </div>
-</div>
-
-
-
-<div class="banner-dj" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= image_path "palmeirasbanner.jpg" %>');">
-  <div class="row" style="width:107vw;">
-    <div class="col-0 col-lg-3">
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="dj-title">
-        <p style="font-size: 20px; text-align:start">Todos os dias a partir das 16h nossos Djs agitam o pôr-do-sol mais lindo de Búzios na areia do Sirena, deixando nossa atmosfera ainda mais agradável e especial.</p>
-        <h1 style="font-size: 30px; text-align:center; margin-right:10px;"><strong>Line Up</strong></h1>
+  <div class="banner-dj my-5" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= image_path "palmeirasbanner.jpg" %>');">
+    <div class="row">
+      <div class="col-0 col-lg-0"></div>
+      <div class="col-12 col-lg-12 my-4">
+        <h1 class="cardapio"><strong>SUNSET</strong></h1>
+        <p style="font-size: 20px; text-align:center">Todos os dias a partir das 16h nossos Djs agitam o pôr-do-sol mais lindo de Búzios na areia do Sirena, deixando nossa atmosfera ainda mais agradável e especial.</p>
+        <h1 class="lineup mt-5" style="font-size: 30px; text-align:center;"><strong>LINE UP</strong></h1>
         <h1 style="font-size: 20px; text-align:center; margin-right:10px;">Djs residentes Robert Pantoja e Warley Santos</h1>
       </div>
+      <div class="col-0 col-lg-0"></div>
     </div>
-    <div class="dj-image col-12 col-lg-3">
-      <%= image_tag "djsirena.jpg", style:"height: 50vh; width:350px; position:absolute; top:0px"%>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "drink1.jpg" %>');">
+      </div>
     </div>
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "djsirena.png" %>');">
+      </div>
+    </div>
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "drink6.jpg" %>');">
+      </div>
+   </div>
   </div>
 </div>
 
@@ -69,17 +79,21 @@
 </div>
 
 <div class="container mt-5">
-  <div class="row mb-2">
-    <div class="col-lg-3"></div>
-    <div class="col-12 col-lg-4" style="align-items: center; justify-content: center; display: flex;">
-      <h1>Celebre seu evento no</h1>
+  <div class="banner-dj my-5" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= image_path "palmeirasbanner.jpg" %>');">
+    <div class="row mb-2">
+      <div class="col-lg-3"></div>
+      <div class="col-12 col-lg-5" style="align-items: center; justify-content: center; display: flex;">
+         <h1 class="cardapio"><strong>CELEBRE SEU EVENTO NO</strong></h1>
+      </div>
+      <div class="col-12 col-lg-1" style="align-items: center; justify-content: center; display: flex;">
+        <%= image_tag "sirenalogoazul.png", style:"height: 120px; width:120px; margin-left: 10px; margin-bottom:5px"%>
+      </div>
+      <div class="col-lg-4"></div>
     </div>
-    <div class="col-12 col-lg-1" style="align-items: center; justify-content: center; display: flex;">
-      <%= image_tag "sirenalogoazul.png", style:"height: 100px; width:100px; margin-left: 10px; margin-bottom:5px"%>
-    </div>
-    <div class="col-lg-4"></div>
   </div>
+</div>
 
+<div class="container mt-5">
   <div class="banner-eventos" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "estruturasirena.jpg" %>');">
     <div class="container banner-logo">
       <div class="row mt-2"></div>
@@ -156,6 +170,19 @@
     <div class="col-12 mt-3 col-lg-4">
       <div class="card-category" style="background-image: url('<%= image_path "prato1.jpg" %>');">
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="banner-sunset" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "bannersunset.jpg" %>');">
+  <div class="container banner-logo mt-5 pt-5">
+    <div class="row my-5"></div>
+    <div class="row" style="width:100vw;">
+      <div class="col-1 col-sm-3 col-lg"></div>
+      <div class="col-10 col-sm-6 col-lg-3">
+        <%= image_tag "sirenalogobranco.png", style:"height: auto; width:100%;", id:"logobranca"%>
+      </div>
+      <div class="col-1 col-sm-3 col-lg"></div>
     </div>
   </div>
 </div>
