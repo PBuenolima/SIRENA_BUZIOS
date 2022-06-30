@@ -14,10 +14,12 @@
 .banner-dj {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
   height: 50vh;
   position:relative;
   box-shadow: 0 0 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-eventos {
