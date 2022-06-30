@@ -3,7 +3,8 @@
   background-position: center;
   padding: 150px 0;
   height: 120vh;
-  position: relative
+  position: relative;
+  box-shadow: 0 0 5px black;
 }
 
 .banner-logo {
@@ -16,12 +17,15 @@
   padding: 150px 0;
   height: 50vh;
   position:relative;
+  box-shadow: 0 0 5px black;
 }
 
 .banner-eventos {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  height: 83vh;
+  height: 56vh;
   position:relative;
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
 }

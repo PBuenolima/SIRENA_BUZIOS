@@ -68,8 +68,8 @@
   </div>
 </div>
 
-<div class="container mt-5" id="eventos">
-  <div class="row">
+<div class="container mt-5">
+  <div class="row mb-2">
     <div class="col-lg-3"></div>
     <div class="col-12 col-lg-4" style="align-items: center; justify-content: center; display: flex;">
       <h1>Celebre seu evento no</h1>
@@ -79,29 +79,67 @@
     </div>
     <div class="col-lg-4"></div>
   </div>
-  <div class="eventos-imagem">
-    <div class="row">
-      <div class="col-lg-12">
-      <%= image_tag "estruturasirena.png"%>
+
+  <div class="banner-eventos" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "estruturasirena.jpg" %>');">
+    <div class="container banner-logo">
+      <div class="row my-5"></div>
+      <div class="row" style="height: auto; width:100%;">
+        <div class="col-2 col-sm col-lg"></div>
+        <div class="col-9 col-sm-5 col-lg-3">
+          <%= image_tag "cardestrutura.png", style:"height: auto; width:100%;  border-radius: 4px; box-shadow: 0 0 5px black; "%>
+        </div>
+        <div class="col-1 col-sm col-lg"></div>
       </div>
-    </div>
-    <div class="row">
-     <div class="col-lg-0 "></div>
-      <div class="col-12 col-lg-6">
-        <%= image_tag "estruturasirena1.png"%>
-      </div>
-      <div class="col-12 col-lg-6">
-        <%= image_tag "estruturasirena2.png", style: "height: 83vh;"%>
-      </div>
-       <div class="col-lg-0"></div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="banner-eventos mt-3" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "estruturasirena1.png" %>');">
+        <div class="container banner-logo">
+          <div class="row my-5"></div>
+          <div class="row" style="height: auto; width:100%;">
+            <div class="col-2 col-sm col-lg"></div>
+            <div class="col-9 col-sm-5 col-lg-6">
+              <%= image_tag "cardestrutura1.png", style:"height: auto; width:100%;  border-radius: 4px; box-shadow: 0 0 5px black; "%>
+            </div>
+            <div class="col-1 col-sm col-lg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="banner-eventos mt-3" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2 )), url('<%= image_path "evento3.jpg" %>');">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "evento1.jpg" %>');">
+      </div>
+    </div>
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "evento2.jpg" %>');">
+      </div>
+    </div>
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "evento4.png" %>');">
+      </div>
+   </div>
+  </div>
 </div>
+
+
+
+
+
+
+
 
 <div class="row">
   <div class="col-0 col-lg-4"></div>
   <div class="col-12 col-lg-4">
-    <div id='map' style='width: 100%; height: 400px;' class= "mt-3"></div>
+    <div id='map' style='width: 100%; height: 400px; border-radius: 4px; box-shadow: 0 0 5px black;' class= "mt-3"></div>
   </div>
   <div class="col-0 col-lg-4"></div>
 </div>
@@ -154,7 +192,7 @@ zoom: 15
 
 // create the popup
 const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-'Associação dos Pescadores - Av. José Bento Ribeiro Dantas, 85 - box 7, Búzios - RJ, 28950-000'
+'Sirena Búzios - Associação dos Pescadores - Av. José Bento Ribeiro Dantas, 85'
 );
 
 // create DOM element for the marker
