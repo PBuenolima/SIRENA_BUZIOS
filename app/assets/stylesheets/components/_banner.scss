@@ -29,3 +29,22 @@
   border-radius: 4px;
   box-shadow: 0 0 5px black;
 }
+
+.cardapio {
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #223748;
+  text-decoration: none;
+}
+
+.cardapio :hover{
+  color: #315572;
+  text-decoration: none;
+}
+
+.dj-title a {
+  text-decoration: none;
+  color: #223748;
+}

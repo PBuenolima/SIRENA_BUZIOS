@@ -113,6 +113,7 @@
       </div>
     </div>
   </div>
+
   <div class="row">
     <div class="col-12 mt-3 col-lg-4">
       <div class="card-category" style="background-image: url('<%= image_path "evento4.png" %>');">
@@ -129,27 +130,42 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-0 col-lg-4"></div>
-  <div class="col-12 col-lg-4">
-    <div id='map' style='width: 100%; height: 400px; border-radius: 4px; box-shadow: 0 0 5px black;' class= "mt-3"></div>
+<div class="container">
+  <div class="row">
+    <div class="banner-dj my-5" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('<%= image_path "palmeirasbanner.jpg" %>');">
+      <div class="col-0 col-lg-0"></div>
+      <div class="col-12 col-lg-12 mt-4">
+        <a href="https://sirena-buzios-gastrobar.adsagencia.com/" class="cardapio"><strong>NOSSOS CARDÁPIOS</strong></a>
+        <h1 style="font-size: 23px; text-align:center; color: #315572;">Os melhores pratos e drinks à beira-mar de Búzios</h1>
+      </div>
+      <div class="col-0 col-lg-0"></div>
+    </div>
   </div>
-  <div class="col-0 col-lg-4"></div>
 </div>
 
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "prato3.jpg" %>');">
+      </div>
+    </div>
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "prato2.jpg" %>');">
+      </div>
+    </div>
+    <div class="col-12 mt-3 col-lg-4">
+      <div class="card-category" style="background-image: url('<%= image_path "prato1.jpg" %>');">
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-4 form-style">
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-12 col-lg-7 mt-3 me-5">
+      <div id='map' style='width: 100%; height: 400px; border-radius: 4px; box-shadow: 0 0 5px black;' class= "mt-3"></div>
+    </div>
+    <div class="col-12 col-lg-4 form-style mt-4">
       <!-- Insert form here -->
       <%= simple_form_for @client  do |f| %>
         <%= f.input :name %>
