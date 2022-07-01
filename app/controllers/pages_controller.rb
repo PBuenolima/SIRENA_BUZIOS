@@ -4,6 +4,6 @@ class PagesController < ApplicationController
   end
 
   def client_params
-    params.permit(:name, :email, :phone_number)
+    params.permit(:nome, :email, :telefone, :mensagem)
   end
 end
