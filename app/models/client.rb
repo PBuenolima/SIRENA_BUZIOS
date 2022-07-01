@@ -1,4 +1,4 @@
 class Client < ApplicationRecord
-  validates :name, :email, :phone_number, presence: true
-  validates :email, :phone_number, uniqueness: true
+  validates :nome, :email, :telefone, :mensagem, presence: true
+  validates :email, :telefone, uniqueness: true
 end
