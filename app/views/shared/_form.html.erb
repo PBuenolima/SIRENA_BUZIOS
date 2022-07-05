@@ -1,0 +1,7 @@
+      <%= simple_form_for @client  do |f| %>
+        <%= f.input :nome %>
+        <%= f.input :email %>
+        <%= f.input :telefone %>
+        <%= f.input :mensagem %>
+        <%= f.submit "ENVIAR", class: "btn btn-color"%>
+      <% end %>

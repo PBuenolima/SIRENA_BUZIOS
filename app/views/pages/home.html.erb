@@ -192,13 +192,7 @@
     </div>
     <div class="col-12 col-lg-4 form-style mt-5">
       <!-- Insert form here -->
-      <%= simple_form_for @client  do |f| %>
-        <%= f.input :nome %>
-        <%= f.input :email %>
-        <%= f.input :telefone %>
-        <%= f.input :mensagem %>
-        <%= f.submit "ENVIAR", class: "btn btn-color"%>
-      <% end %>
+      <%= render 'shared/form' %>
       <hr>
       <h2>CADASTRE-SE PARA RESERVAS E PROMOÇÕES EXCLUSIVAS</h2>
     </div>
