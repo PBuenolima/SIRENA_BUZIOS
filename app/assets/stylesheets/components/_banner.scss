@@ -32,7 +32,7 @@
   box-shadow: 0 0 5px black;
 }
 
-.cardapio {
+.titles {
   font-family: 'Playfair Display', serif;
   font-size: 41px;
   justify-content: center;
@@ -42,7 +42,7 @@
   text-decoration: none;
 }
 
-.cardapio :hover{
+.titles :hover{
   color: #315572;
   text-decoration: none;
 }
@@ -59,4 +59,11 @@
   height: 80vh;
   position: relative;
   box-shadow: 0 0 5px black;
+}
+
+.banner-cardapio {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  position: relative;
 }
